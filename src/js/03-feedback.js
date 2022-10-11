@@ -35,9 +35,9 @@ formRef.addEventListener('submit', onSubmitCheck);
 function checkTextArea() {
   const email = document.querySelector('.feedback-form input');
   const message = document.querySelector('.feedback-form textarea');
-  const InputCurrent = JSON.parse(localStorage.getItem(LOCALSTORAGE_KEY));
-  if (InputCurrent) {
-    email.value = InputCurrent.email || '';
-    message.value = InputCurrent.message || '';
+  const inputCurrent = JSON.parse(localStorage.getItem(LOCALSTORAGE_KEY));
+  if (inputCurrent) {
+    email.value = inputCurrent.email || '';
+    message.value = inputCurrent.message || '';
   }
 }
